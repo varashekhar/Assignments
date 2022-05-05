@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Students Details in table</title>
+    <style>
+      body {
+        border: solid gray;
+        padding: 5px;
+      }
+      header {
+        text-align: center;
+        border: 3px solid gray;
+        background: linear-gradient(#2c5364, #203a43);
+        color: white;
+        border-radius: 5px;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        left: 1%;
+        border-radius: 5px;
+      }
+      .std-box {
+        width: 150px;
+        height: 30px;
+        font-size: 20px;
+        background-color: lightgray;
+      }
+      /* .box{
+          height: 40px;
+      }
+       */
+      .std-marks {
+        width: 600px;
+        /* height: 30px; */
+        font-size: 20px;
+        background-color: lightgray;
+      }
+      .std_subcode {
+        width: 185px;
+        background-color: lightblue;
+        color: black;
+      }
+      .std_subname {
+        width: 228px;
+        background-color: lightblue;
+        color: black;
+      }
+      .std_maxmark {
+        width: 124px;
+        background-color: lightblue;
+        color: black;
+      }
+      .std_minmark {
+        width: 87px;
+        background-color: lightblue;
+        color: black;
+      }
+      .std_obtmarks {
+        background-color: lightblue;
+        color: black;
+      }
+      .std_details {
+        text-align: center;
+      }
+      .box1 {
+        position: sticky;
+        top: 20px;
+        z-index: 2;
+      }
+      .marksbox1 {
+        position: sticky;
+        top: 60px;
+      }
+      td {
+        text-align: center;
+        background-color: #2c3e50;
+        color: white;
+        font-size: 20px;
+      }
+      footer {
+        text-align: center;
+        border: 3px solid gray;
+        margin-top: 5px;
+        background: linear-gradient(#2c5364, #203a43);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Students Details in Table</h1>
+    </header>
+    <table border="solid;" width="100%" height="200px">
+      <thead>
+        <tr>
+          <th class="std-box box1">Student ID</th>
+          <th class="std-box box1">Name</th>
+          <th class="std-box box1">Photo</th>
+          <th class="std-box box1">Class</th>
+          <th class="std-marks box1">Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="box">
+          <td>1</td>
+          <td>Ahmed</td>
+          <td><img src="./images/boy.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table class="marksbox1" border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-003</td>
+                  <td>Math-2</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>84</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Chemistry</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>76</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Physic</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>70</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-005</td>
+                  <td>C++</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>90</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-006</td>
+                  <td>C</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>92</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>2</td>
+          <td>Neha</td>
+          <td><img src="./images/lady.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-003</td>
+                  <td>Math-2</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>85</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Physic</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-005</td>
+                  <td>FM</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-003</td>
+                  <td>Physic</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>3</td>
+          <td>Rahul</td>
+          <td><img src="./images/boy.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-003</td>
+                  <td>Math-2</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>85</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Physic</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>78</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-005</td>
+                  <td>C++</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-006</td>
+                  <td>C</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>4</td>
+          <td>Krish</td>
+          <td><img src="./images/boy.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>5</td>
+          <td>Sneha</td>
+          <td><img src="./images/lady.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>6</td>
+          <td>Sundeep</td>
+          <td><img src="./images/boy.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>7</td>
+          <td>Ramesh</td>
+          <td><img src="./images/boy.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>8</td>
+          <td>Suresh</td>
+          <td><img src="./images/boy.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>9</td>
+          <td>Mahesh</td>
+          <td><img src="./images/boy.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>10</td>
+          <td>Ahmed</td>
+          <td><img src="./images/boy.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="box">
+          <td>11</td>
+          <td>Krishna</td>
+          <td><img src="./images/boy.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table class="marksbox1" border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-003</td>
+                  <td>Math-2</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>84</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Chemistry</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>76</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Physic</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>70</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-005</td>
+                  <td>C++</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>90</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-006</td>
+                  <td>C</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>92</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="box">
+          <td>12</td>
+          <td>Teena</td>
+          <td><img src="./images/lady.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table class="marksbox1" border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-003</td>
+                  <td>Math-2</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>84</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Chemistry</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>76</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Physic</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>70</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-005</td>
+                  <td>C++</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>90</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-006</td>
+                  <td>C</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>92</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="box">
+          <td>13</td>
+          <td>Sara</td>
+          <td><img src="./images/lady.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table class="marksbox1" border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-003</td>
+                  <td>Math-2</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>84</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Chemistry</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>76</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Physic</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>70</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-005</td>
+                  <td>C++</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>90</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-006</td>
+                  <td>C</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>92</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="box">
+          <td>14</td>
+          <td>Ahmed</td>
+          <td><img src="./images/boy.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table class="marksbox1" border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-003</td>
+                  <td>Math-2</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>84</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Chemistry</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>76</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Physic</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>70</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-005</td>
+                  <td>C++</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>90</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-006</td>
+                  <td>C</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>92</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="box">
+          <td>15</td>
+          <td>Ahmed</td>
+          <td><img src="./images/boy.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table class="marksbox1" border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-003</td>
+                  <td>Math-2</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>84</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Chemistry</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>76</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Physic</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>70</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-005</td>
+                  <td>C++</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>90</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-006</td>
+                  <td>C</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>92</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr class="box">
+          <td>16</td>
+          <td>Ahmed</td>
+          <td><img src="./images/boy.jpg" alt="" /></td>
+          <td>10th</td>
+          <td>
+            <table class="marksbox1" border="2px solid" width="100%">
+              <thead>
+                <tr>
+                  <th class="std_subcode marksbox1">Subject Code</th>
+                  <th class="std_subname marksbox1">Subject Name</th>
+                  <th class="std_minmark marksbox1">Min Marks</th>
+                  <th class="std_maxmark marksbox1">Max Marks</th>
+                  <th class="std_obtmarks marksbox1">Obtained Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S-002</td>
+                  <td>Math-1</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>80</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-003</td>
+                  <td>Math-2</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>84</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Chemistry</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>76</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-004</td>
+                  <td>Physic</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>70</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-005</td>
+                  <td>C++</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>90</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>S-006</td>
+                  <td>C</td>
+                  <td>65</td>
+                  <td>100</td>
+                  <td>92</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <footer>
+      <h4>&copy; Copyrights Naresh i Technologies</h4>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of digits</title>
+</head>
+
+<body>
+    <h1>Show the sum of digits</h1>
+    <script>
+
+        // Show the sum of digits
+
+        // var n = 37482;
+        var digits = prompt("enter the number");
+        digits = parseInt(digits);
+        console.log(digits);
+        var sum = 0;
+        var rem;
+        while (digits > 0) {
+            rem = digits % 10;
+            digits = digits / 10;
+            digits = parseInt(digits);
+            sum += rem;
+        }
+        console.log("the sum of digits is " + sum);
+    </script>
+</body>
+
+</html>

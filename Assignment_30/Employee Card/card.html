@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Card</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+
+<body>
+    <main class="sub_card">
+        <ul>
+            <li class="header">
+                Employee Details
+            </li>
+            <li>
+                <div class="label_space center">
+                    <label for="">Name</label>
+                </div>
+                <div class="input_space center">
+                    <input class="tlabel" type="text" id="name" onkeypress="return data(event);">
+                </div>
+                <div class="error nameErr">* Required *</div>
+
+            </li>
+            <li>
+                <div class="label_space">
+                    <label for="">Gender</label>
+                </div>
+                <div>
+                    Male: <input type="radio" name="gend" id="gender" value="male" checked>
+                    Female: <input type="radio" name="gend" id="gender" value="female">
+                </div>
+
+            </li>
+            <li>
+                <div class="label_space">
+                    <label for="">Age</label>
+                </div>
+                <div>
+                    <input type="text" id="age" onkeypress="return ageData(event);" >
+                </div>
+                <div class="error ageErr">* Required *</div>
+            </li>
+            <li>
+                <div class="label_space">
+                    <label for="">Basic Salary</label>
+                </div>
+                <div>
+                    <input type="text" id="basic_salary" onkeypress="return ageData(event);">
+                </div>
+                <div class="error salaryErr">* Required *</div>
+
+            </li>
+            <li>
+                <div class="label_space">
+                    <label for="">Department</label>
+                </div>
+                <div>
+                    <input type="text" name="" id="depart" onkeypress="return data(event);">
+                </div>
+                <div class="error depErr">* Required *</div>
+
+            </li>
+
+            <li>
+                <input class="sub_btn" type="button" value="Generate Employee Card" id="btn" onclick="employeeDetails();">
+            </li>
+        </ul>
+    </main>
+    <br>
+    <main class="idcard">
+
+        <ul>
+            <li class="header p_size">
+                Employee Details Card
+            </li>
+            <li class="p_size">
+                <label for="">Name :</label> <span id="d_name"></span>
+
+            </li>
+            <li class="p_size">
+                <label for="">Gender : </label><span id="d_gender"></span>
+
+            </li>
+            <li class="p_size">
+                <label for="">Age : </label><span id="d_age"></span>
+
+            </li>
+            <li class="p_size">
+                <label for="">Basic Salary : </label><span id="d_bsalary"></span>
+
+            </li>
+            <li class="p_size">
+                <label for="">Department : </label><span id="d_depart"></span>
+
+            </li>
+            <li class="p_size">
+                <label for="">PF : </label><span id="d_pf"></span>
+
+            </li>
+            <li class="p_size">
+                <label for="">HRA : </label><span id="d_hra"></span>
+
+            </li>
+
+            <li class="p_size">
+                <label for="">Total Salary : </label><span id="d_tsalary"></span>
+            </li>
+         </ul>
+     </main>
+  <script src="card.js"></script>
+</body>
+
+</html>

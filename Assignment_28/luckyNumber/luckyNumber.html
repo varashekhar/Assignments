@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>lucky number</title>
+</head>
+
+<body>
+	<h1>finding the lucky number</h1>
+	<script>
+		//first we have to find the sum of given number then we go for lucky number	
+		var luckyNo = prompt("enter the number");
+		luckyNo = parseInt(luckyNo);
+		console.log(luckyNo);
+		var sum = 0;
+		var rem;
+		var temp = luckyNo;
+		while (luckyNo > 0) {
+			rem = luckyNo % 10;
+			luckyNo = luckyNo / 10;
+			luckyNo = parseInt(luckyNo);
+			sum += rem;
+			if (luckyNo == 0 && sum >= 10) {
+				luckyNo = sum;
+				sum = 0;
+			}
+		}
+		console.log(`The lucky number of ${temp} is = ${sum}`);
+	</script>
+</body>
+
+</html>

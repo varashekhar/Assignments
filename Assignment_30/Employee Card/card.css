@@ -1,0 +1,80 @@
+body{
+    background-color: lightblue;
+}
+main{
+    border: 10px outset #2f7485;
+    width: 40%;
+    margin-left: 20px ;
+    border-radius: 10px;
+    background: linear-gradient(#ece3e3, #cdddcd);
+    
+    
+ } 
+ul{
+    width: 80%;
+    border: 1px solid gray;
+    margin: 8px auto;
+    padding: 10px;
+    background: linear-gradient(#DECBA4, #3E5151);
+    border-radius: 5px;
+}
+li{
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 30px;
+    list-style: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    background-color: #384c5f;
+    color: white;
+    border-radius: 5px;
+}
+li:hover{
+    background-color:#5b7085 ;
+}
+.header{
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background:linear-gradient(#8ab8cf, #313436);
+    color: white;
+}
+.idcard{
+    display: none;
+    position: absolute;
+    left :55%;
+    top: 10px;
+}
+.p_size{
+    padding: 21px;
+}
+.label_space,
+.input_space{
+    float: left;
+}
+.label_space{
+    width: 200px;
+}
+.center{
+    position: relative;
+    top: -10px;
+}
+.sub_btn{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.sub_btn:hover{
+    background-color: #b8b3b3;
+    
+}
+.error{
+    display: none;
+    color: #e7eb09;
+    font-size: 15px;
+    clear: both;
+    text-align: center;
+}
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Details Dynamic</title>
+  </head>
+  <body>
+  
+    <script>
+        var sName, age, gender, m1, m2, m3;
+        sName = prompt('Enter student name');
+        age = prompt('Enter student age ');
+        gender = prompt('Enter student gender ');
+        m1 = prompt('Enter student m1 marks');
+        m1 = parseInt(m1);
+        m2 = prompt('Enter student m2 marks');
+        m2 = parseInt(m2);
+        m3 = prompt('Enter student m3 marks');
+        m3 = parseInt(m3);
+        var total = m1 + m2 + m3;
+        var avg = total / 3;
+        console.log('Student name ' + sName);
+        console.log('age ' + age);
+        console.log('gender ' + gender);
+        console.log('total marks are ' + total);
+        console.log('Average mark is ' + avg);
+    </script>
+  </body>
+</html>

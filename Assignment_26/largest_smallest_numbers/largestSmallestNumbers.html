@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largest and smallest numbers</title>
+</head>
+
+<body>
+    <h1>find the largest and smallest numbers</h1>
+    <script>
+
+        //find the largest number
+
+        function check(p, q, r) {
+            if (p >= q && p >= r) {
+                return p;
+            } else if (q >= p && q >= r) {
+                return q;
+            } else {
+                return r;
+            }
+        }
+        var a = prompt("enter first large value");
+        var b = prompt("enter second large value");
+        var c = prompt("enter third large value");
+        var x = check(a, b, c);
+        console.log(`${a}, ${b}, ${c}: largest number = ${x}`);
+
+
+        // find the smallest number
+
+        function test(x, y, z) {
+            if (x <= y && x <= z) {
+                return x;
+            } else if (y <= x && y <= z) {
+                return y;
+            } else {
+                return z;
+            }
+        }
+        var a = prompt("enter 1st small value");
+        var b = prompt("enter 2nd small value");
+        var c = prompt("enter 3rd small value");
+        var t = test(a, b, c);
+        console.log(`${a}, ${b}, ${c}: smallest number = ${t}`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+body{
+    background: linear-gradient(#73C8A9, #373B44);
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+.container{
+    border: 1px solid lightgray;
+    width: 40%;
+    height: 600px;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #414345;
+    border-radius: 20px;
+    
+   
+   
+}
+ul{
+    border: 1px solid gray;
+    background-color: #f7ae49;
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+    
+
+}
+li{
+    border: 1px solid lightgray;
+    margin: 10px;
+    padding: 8px;
+    position: relative;
+    left: -18px;
+    list-style: none;
+    background-color: #726767;
+    border-radius: 5px;
+    font-size: 25px;
+}
+.valuetab{
+    
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    left: 30%;
+}
+.valuetab:focus{
+
+    
+    border-radius: 2px;
+}
+#resultblock{
+    display: none;
+    background-color: #218380;
+    color: white;
+}
+#mresultblock{
+    display: none;
+    background-color: #ad2c9c;
+    color: white;
+}
+#sbresultblock{
+    display: none;
+    background-color: #21834a;
+    color: white;
+}
+#dvresultblock{
+    display: none;
+    background-color: #83213a;
+    color: white;
+}
+
+.btn{
+    display: inline;
+    padding: 15px;
+    
+    font-size: 40px;
+   
+
+}
+.btn:hover{
+    background-color: #54c0e4;
+    border-radius: 8px;
+    color: white;
+}
+.add{
+    cursor: pointer;
+}
+
+.mul{
+    position: relative;
+    left: 50px;
+    cursor: pointer;
+
+}
+.sub{
+position: relative;
+left: 100px;
+cursor: pointer;
+}
+.dvi{
+    position: relative;
+    left: 150px;
+    cursor: pointer;
+}
+.clear{
+    position: relative;
+    left: 210px;
+    border-radius: 8px;
+    display: inline;
+    padding: 15px;
+    font-size: 40px;
+}
+.clear:hover{
+    background-color: lightgray;
+    cursor: pointer;
+    
+}

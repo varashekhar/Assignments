@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Arithmethic Operations</h1>
+
+    <div class="container">
+        <ul>
+            <li>
+
+                <input placeholder="Enter value 1" class="valuetab" type="text" id="firstn" onkeypress="return validateData(event);">
+            </li>
+            <br>
+            <li>
+
+                <input placeholder="Enter value 2" class="valuetab" type="text" id="secondn" onkeypress="return validateData(event);">
+            </li>
+            <br>
+            <li>
+
+                <input class="btn add" type="button" value="+" onclick="addnumbers();">
+                <input class="btn mul" type="button" value="*" onclick="multinumbers();">
+                <input class="btn sub " type="button" value="-" onclick="subtractnumbers();">
+                <input class="btn dvi" type="button" value="/" onclick="dividnumbers();">
+                <input class="clear" type="reset" value="AC" >
+            
+
+            </li>
+
+            <br>
+            <li id="resultblock">
+                The sum of 2 numbers is <span id="sblock"></span>
+            </li>
+            <li id="mresultblock">
+                The multiplication of 2 numbers is <span id="mblock"></span>
+            </li>
+            <li id="sbresultblock">
+                The subtraction of 2 numbers is <span id="sbblock"></span>
+            </li>
+            <li id="dvresultblock">
+                The division of 2 numbers is <span id="dvblock"></span>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

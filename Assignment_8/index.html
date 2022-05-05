@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Registration Page</title>
+    <style>
+      body {
+        border: 3px solid gray;
+        height: 100%;
+        width: 1500px;
+        border-radius: 3px;
+      }
+      header {
+        border: 2px solid gray;
+        text-align: center;
+        margin: 15px;
+        background: linear-gradient(#263646, #bdc3c7);
+        color: white;
+      }
+      .container {
+        border: 3px solid gray;
+        margin: 10px;
+        background: linear-gradient(#27395a, #243B55);
+        color: white;
+        border-radius: 5px;
+      }
+      .block1 {
+        border: 3px solid;
+        height: 250px;
+      }
+      .block2 {
+        border: 3px solid;
+        height: 250px;
+      }
+      .block3 {
+        border: 3px solid;
+        height: 250px;
+      }
+      .block4 {
+        border: 3px solid;
+        height: 250px;
+      }
+      .block_gap {
+        margin: 40px;
+        margin-top: 50px;
+        border-radius: 5px;
+      }
+      .mini_block1 {
+        border: 3px solid gray;
+        width: 250px;
+        height: 60px;
+        position: relative;
+        top: -35px;
+        right: -50px;
+        z-index: 2;
+        background-color: lightgray;
+        color: black;
+        border-radius: 5px;
+      }
+      .mini_block1:hover{
+          background-color: #11998e;
+          color: white;
+      }
+      h3 {
+        text-align: center;
+      }
+      .user_details {
+        position: relative;
+        left: 150px;
+        top: -20px;
+      }
+      label {
+        margin: 10px;
+        text-align: center;
+      }
+      input {
+        margin: 15px;
+        position: relative;
+        left: 25px;
+      }
+      .user_type {
+        position: relative;
+        left: 600px;
+        top: -138px;
+      }
+      .user_input {
+        position: relative;
+        left: 20px;
+      }
+      .user_id {
+        position: relative;
+        left: 85px;
+      }
+      .contact{
+          position: relative;
+          left: 550px;
+          top: -150px;
+      }
+      .select1{
+          position: relative;
+          left: 20px
+      }
+      .user_acc{
+        position: relative;
+        left: 10px;
+      }
+      .country{
+          position: relative;
+          left: 600px;
+          top: -150px;
+      }
+      .state{
+          position: relative;
+          left: 600px;
+          top: -150px;
+        
+      }
+      .s_country{
+          position: relative;
+          left: 22px;
+        
+      }
+      .stateinfo{
+          position: relative;
+          left: 55px;
+      }
+      .stateinfo1{
+          position:relative;
+          left: 44px;
+      }
+      .footer_block{
+          border: 2px solid ;
+          height: 170px;
+          margin: 40px;
+      }
+      textarea{
+          border: 3px solid gray;
+          position: relative;
+          left: 70px;
+          top: -10px;
+      }
+      .text{
+          position: relative;
+          top: -60px;
+          left: 40px;
+          font-size: 20px;
+      }
+      footer{
+          border: 3px solid gray;
+          text-align: center;
+          margin: 15px;
+          background: linear-gradient(#263646, #bdc3c7);
+        color: white;
+      }
+      button{
+          position: relative;
+          left: 1250px;
+          top: -15px;
+          font-size: 20px;
+          border-radius: 5px;
+          padding: 8px;
+          
+      }
+      button:hover{
+          background-color: #a59e9e;
+          color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Students Registration Page</h1>
+    </header>
+    <div class="container">
+      <div class="block1 block_gap">
+        <div class="mini_block1">
+          <h3>User Account Details</h3>
+        </div>
+        <div class="user_details">
+          <label  for="account">Account Name / ID</label>
+          <input class="user_input" type="text" name="account name" />
+          <br />
+          <label for="password">Account Password</label>
+          <input type="password" name="password" />
+          <br />
+          <label for="Email">Email ID</label>
+          <input class="user_id" type="Email" name="email" required />
+          <br />
+          <label class="user_type" for="accountype"
+            >Account Type:
+            <select name="accountype" id="">
+              <option value="saving">Saving</option>
+              <option value="current">Current</option>
+              <option value="FD">Fixed Deposit</option>
+              <option value="NRI">NRI</option>
+            </select>
+          </label>
+          <option value="saving"></option>
+        </div>
+      </div>
+      <div class="block2 block_gap">
+        <div class="mini_block1">
+          <h3>Personal Details</h3>
+        </div>
+        <div class="user_details">
+          <label  for="username">User Name</label>
+          <input class="user_input" type="text" />
+          <br />
+          <label for="text"> First Name </label>
+          <input type="text" name="first name" />
+          <br />
+          <label for="ugender">Gender</label>
+          <input class="user_id" type="radio" name="ugender" /> Male
+          <input class="user_id" type="radio" name="ugender" /> Female
+          <br />
+          <label class="contact" for="conctactnumber">Contact Number</label>
+          <input class="contact" type="text" name="contact number" />
+        </div>
+      </div>
+      <div class="block3 block_gap">
+          <div class="mini_block1">
+          <h3>Education Details</h3>
+        </div>
+        <br>
+        <div class="user_details">
+          <label class="user_acc" for="qualification">Qualification:
+              <select class="select1">
+                  <option value="">Degree</option>
+                  <option value="">Master</option>
+                  <option value="">PhD</option>
+              </select>
+          </label>
+          <br> <br>
+           <label for="username">Course Optaining:
+              <select class="select2">
+                  <option value="">empty</option>
+                  <option value="">empty</option>
+                  <option value="">empty</option>
+              </select>
+          </label>
+          <br>
+          <br>
+
+          <label for="checkbox">Languages Known:</label>
+          <input type="checkbox" id="lang"/>
+          <label for="Languages">English</label>
+          <input type="checkbox" id="lang"/> 
+          <label for="">Hindi</label>
+          <input type="checkbox">
+          <label for="">Urdu</label>
+          <input type="checkbox">
+          <label for="">Telugu</label>
+        </div>
+      </div>
+      <div class="block2 block_gap">
+        <div class="mini_block1">
+          <h3>Address</h3>
+        </div>
+        <div class="user_details">
+          <label class=""  for="username">D No:</label>
+          <input class="user_input stateinfo" type="text" />
+          <br />
+          <label clas for="text"> State Code </label>
+          <input type="text" name="first name" />
+          <br />
+          <label class="" for="text"> Pincode </label>
+          <input class="stateinfo1" type="text" name="first name" />
+          <br />
+          <label class="country " for="conctactnumber">Country:
+              <select class="s_country">
+                  <option value="">India</option>
+                  <option value="">USA</option>
+                  <option>Canada</option>
+                  <option>UK</option>
+                  <option>Russia</option>
+                  <option>Turkey</option>
+                  <option>Japan</option>
+                  <option>Australia</option>
+              </select>
+          </label>
+          <br>
+          <br>
+           <label class="state" for="conctactnumber">State Name:
+              <select>
+                  <option>Telengana</option>
+                  <option>Andhra Pradesh</option>
+                  <option>Punjab</option>
+                  <option>Rajistan</option>
+                  <option>Delhi</option>
+                  <option>Chennai</option>
+                  <option>Mumbai</option>
+              </select>
+          </label>
+        </div>
+      </div>
+       <div class="footer_block">
+          <div class="mini_block1">
+             <h3>About User</h3>
+          </div>
+          <label class="text" for="textarea">About Yourself</label>
+          <textarea name="aboutyourself" cols="150" rows="6"></textarea>
+        </div>
+        <button>Submit your Details</button>
+      </div>
+     
+    </div>
+    <footer>
+      <h4>&copy; Copyrights Naresh i Technologies 2021</h4>
+    </footer>
+  </body>
+</html>

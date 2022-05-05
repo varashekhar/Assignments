@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>sum of primes</title>
+        <style>
+            body{
+                background-color: lightblue;
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Prime numbers from 1 to 100 and sum of them.</h1>
+        <script>
+            // write a programm to calculate the sum of prime numbers between 1 to 100?
+
+            // steps to follow
+
+            // 1 - check whether a number is prime or not.
+            // 2 - find all the prime numbers between the given range.
+            // 3 - calculate all the prime numbers between the given range.
+
+            var sum = 0;
+            for (j = 1; j <= 100; j++) {
+                var tracker = 0;
+                var n = j;
+                for (i = 2; i < n; i++) {
+                    var rem = n % i;
+                    if (rem == 0) {
+                        tracker++;
+                        break;
+                    }
+                }
+                // console.log(tracker);
+                if (tracker == 0) {
+                    console.log( j + " is a prime number ");
+                    sum = sum + j;
+                }
+            }
+            console.log("the sum of prime numbers from 1 to 100 is " + sum);
+
+        </script>
+    </body>
+</html>

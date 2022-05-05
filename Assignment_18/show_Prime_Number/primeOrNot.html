@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime number</title>
+</head>
+
+<body>
+    <h1>show whether the number is prime or composite</h1>
+    <script>
+
+        // Show whether the number is prime or not
+        var primeNumber = prompt("enter the number");
+        primeNumber = parseInt(primeNumber)
+        var rem;
+        var tracker = 0;
+        for (i = 2; i < primeNumber; i++) {
+            rem = primeNumber % i;
+            if (rem == 0) {
+                tracker++;
+            }
+        }
+        if (tracker == 0) {
+            console.log(primeNumber + " is a prime number ");
+        } else {
+            console.log(primeNumber + " is not a prime number its a composite number");
+        }
+
+        // Show whether the number is composite or not
+
+        var compositeNumber = prompt("enter the number");
+        compositeNumber = parseInt(compositeNumber)
+        var rem;
+        var tracker = 0;
+        for (i = 1; i < compositeNumber; i++) {
+            rem = compositeNumber % i;
+            if (rem == 0) {
+                tracker++;
+            }
+        }
+        if (tracker > 2) {
+            console.log(compositeNumber + " is a composite number ");
+        } else {
+            console.log(compositeNumber + " is a prime number");
+        }
+
+    </script>
+</body>
+
+</html>

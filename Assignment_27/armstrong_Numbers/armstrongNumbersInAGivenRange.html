@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstrong numbers in a range</title>
+</head>
+
+<body>
+    <h1>find armstrong number from 1 to 1000</h1>
+    <script>
+        // find armstrong numbers from 1 to 1000
+        var a = prompt("enter the lower value");
+        var b = prompt("enter the higher value");
+        var result = 0;
+        for (i = a; i < b; i++) {
+            var temp = i;
+            var noOfDigits = i.toString().length;
+            var sum = 0;
+            while (temp > 0) {
+                rem = temp % 10;
+                temp = parseInt(temp / 10);
+                sum += rem ** noOfDigits;
+            }
+            if (sum == i) {
+                console.log(i);
+            }
+        } 
+    </script>
+</body>
+
+</html>

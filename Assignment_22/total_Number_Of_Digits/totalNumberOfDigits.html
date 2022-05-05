@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>total number of digits</title>
+</head>
+
+<body>
+    <h1>show total number of digits</h1>
+    <script>
+        // find the total number of digits
+
+        var totalNum = prompt("Enter the numbers")
+        totalNum = parseInt(totalNum);
+        console.log(totalNum);
+        var result = 0;
+        var digitNumber = 0;
+        result = totalNum;
+        while (result > 0) {
+            digitNumber += 1;
+            result = result / 10;
+            result = parseInt(result);
+        }
+        console.log("The total number of digits is " + digitNumber);
+    </script>
+</body>
+
+</html>

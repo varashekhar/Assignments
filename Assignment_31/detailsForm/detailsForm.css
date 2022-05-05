@@ -1,0 +1,131 @@
+.main_container{
+    border: 3px solid gray;
+    width: 35%;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #9fd4e6;
+}
+h3{
+    text-align: center;
+    font-family: sans-serif;
+}
+ul{
+    border: 2px solid gray;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #d4dce2;    
+}
+li{
+    border: 1px solid black;
+    list-style: none;
+    margin: 5px;
+    padding: 15px;
+    font-family: sans-serif;
+    border-radius: 4px;
+    background-color: #4b6666;
+    color: white;
+}
+.error{
+    text-align: center;
+    clear: both;
+    color: #f1ee08;
+    display: none;
+    font-size: 13px;
+    
+}
+.first_label,
+.first_input{
+    float: left;
+}
+.first_label{
+    width: 190px;
+}
+.li_container{
+    height: 26px;
+}
+textarea{
+    resize: none;
+    position: relative;
+    right: -80px;
+    top: -15px;
+    border-radius: 3px;
+}
+ 
+.section_container{
+    position: relative;
+    left: 550px;
+    top: -655px;
+    border: 3px solid gray;
+    width: 55%;
+    display: none;
+    border-radius: 5px;
+    background-color: #9fd4e6;
+}
+h3{
+    text-align: center;
+    font-family: sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+table, thead, tr {
+    border: 3px solid gray;
+    margin: 9px;
+    padding: 10px;
+    border-radius: 8px;    
+}
+table{
+   background-color: #d4dce2;
+}
+th{
+    border: 2px solid gray;
+    height: 30px;
+    padding: 15px;
+    border-radius: 4px;
+     background-color: #3e4d5e;
+    color: white;     
+}
+.tdtag {
+    border: 1px solid gray;
+    text-align: center;
+    background-color: #597474;
+    padding: 7px;   
+    color: white;
+}
+.table_header{
+    width: 76px;
+    font-family: sans-serif;
+}
+.btn{
+    font-size: 20px;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: lightgray;
+   
+}
+.btn:hover{
+    background-color: white; 
+}
+.edit_btn{
+   position: relative;
+   left: -5px;
+   border-radius: 4px;
+   background-color: lightgray;
+}
+.edit_btn:hover{
+    background-color: white;
+}
+.delete_btn{
+    position: relative;
+    right: -6px;
+    border-radius: 4px;
+    background-color: lightgray;
+}
+.delete_btn:hover{
+    background-color: white;
+}
+
+

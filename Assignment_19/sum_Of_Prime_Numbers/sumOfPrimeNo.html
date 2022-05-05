@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of prime numbers</title>
+</head>
+
+<body>
+    <h1>show the sum of prime numbers within given range</h1>
+    <script>
+        // show sum of the prime numbers from 1 to 100;
+
+        var primeNo = [1, 100]
+        // var rem;
+        // var tracker = 0;
+        // for (i = 2; i < primeNo; i++) {
+        //     rem = primeNo % i;
+        //     if (rem == 0) {
+        //         tracker++;
+        //     }
+        // }
+        // if (tracker == 0) {
+        //     console.log("its prime");
+        // } else {
+        //     console.log(" not a prime");
+        // }
+
+
+        // now we declare a new varible to process this loop for 100 times
+        // var sum = 0;
+        // for (j = 1; j <= 100; j++) {
+        //     var tracker = 0;
+        //     var primeNo = j;
+        //     for (i = 2; i < primeNo; i++) {
+        //         rem = primeNo % i;
+        //         if (rem == 0) {
+        //             tracker++;
+        //             break;
+        //         }
+        //     }
+        //     if (tracker == 0) {
+        //         console.log(j + " is a prime number");
+        //         sum += j;
+        //     }
+        // }
+        // console.log(sum);
+
+        //find the prime numbers
+
+        // var n = prompt("enter the number");
+        // n = parseInt(n);
+        // var finder = 0;
+        // var rem;
+        // for (i = 2; i < n; i++) {
+        //     rem = n % i;
+        //     if (rem == 0) {
+        //         finder++
+        //     }
+        // }
+        // console.log(n);
+        // if (finder == 0) {
+        //     console.log("its prime");
+        // } else {
+        //     console.log("not prime");
+        // }
+
+
+
+        // we declare a new variable 
+
+        // now find the prime numbers between given range and sum of them
+
+        var sum = 0;
+        for (j = 1; j <= 100; j++) {
+            var n = j;
+            var finder = 0;
+            for (i = 2; i < n; i++) {
+                var rem = n % i;
+                if (rem == 0) {
+                    finder++;
+                    break;
+                }
+            }
+
+            if (finder == 0) {
+                console.log(j + " is prime number");
+                sum = sum + j;
+
+            }
+        }
+        console.log("sum of prime numbers from 1 to 100 is " + sum);
+    </script>
+</body>
+
+</html>

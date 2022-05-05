@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrome number</title>
+</head>
+
+<body>
+    <h1>Check whether the given number is palindrome or not</h1>
+    <script>
+        // show whether the given number is palindrome or not
+
+        // for finding the palindrome number first we must find the reverse of given number then palindrome number.
+        var palinNumber = prompt("Enter the number");
+        palinNumber = parseInt(palinNumber);
+        console.log(palinNumber);
+        var rev = 0;
+        var rem;
+        var temp = palinNumber; // we declare this new ( temp) variable after fiding the reverse number.
+        while (palinNumber > 0) {
+            rem = palinNumber % 10;
+            palinNumber = palinNumber / 10;
+            palinNumber = parseInt(palinNumber)
+            rev = (rev * 10) + rem;
+        }
+        // we declare a new variable 
+        // var temp = palinNumber;
+        if (temp == rev) {
+            console.log(temp + " is a palindrome number");
+        } else {
+            console.log(temp + " is not a palindrome number");
+        }
+    </script>
+</body>
+
+</html>

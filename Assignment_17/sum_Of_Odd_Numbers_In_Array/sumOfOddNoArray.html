@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of Odd numbers in array</title>
+</head>
+
+<body>
+    <h1>Show the odd numbers and their sum in array</h1>
+    <script>
+        // find out the sum of odd numbers in given array
+
+        var oddNumber = [22, 97, 17, 35, 27, 118, 219, 67, 36, 117, 13];
+        var sum = 0;
+        for (i = 0; i < oddNumber.length; i++) {
+            if (oddNumber[i] % 2 != 0) {
+                sum += oddNumber[i]
+                console.log(oddNumber[i]);
+            }
+        }
+        console.log("the sum of odd numbers is " + sum);
+    </script>
+</body>
+
+</html>

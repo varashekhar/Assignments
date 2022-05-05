@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="detailsForm.css">
+</head>
+<body>
+    <main class="main_container">
+        <h3>Register Form</h3>
+        <ul>
+            <li class="li_container">
+                <div class="first_label">
+                    <label for="">Name : </label>
+                </div>
+                <div class="first_input">
+                    <input type="text" placeholder="Full Name"  id="sname" onkeypress="return data(event);">
+                </div>
+                <div class="error nameErr">* Required *</div>                
+            </li>
+            <li>
+                <div class="first_label">
+                    <label for="">Age : </label>
+                </div>
+                <div>
+                    <input type="text" name="" id="sage" onkeypress="return ageData(event);">
+                </div>
+                <div class="error ageErr">* Required *</div>
+            </li>
+            <li>
+                <div class="first_label">
+                    <label for="">Gender : </label>
+                </div>
+                <div>
+                    Male:  <input type="radio" name="gend" value="male" id="sgender" checked>
+                    Female: <input type="radio" name="gend"  value="female" id="sgender">
+                </div>               
+            </li>
+            <li>
+                <div class="first_label">
+                    <label for="">Country : </label>
+                </div>
+                <div> 
+                    <select name="" id="scountry" >
+                        <option value="select country" >Select Country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Spain">Spain</option>
+                        <option value="France">France</option>
+                    </select>
+                </div>
+                <div class="error countryErr">* Required *</div>               
+            </li>
+            <li>
+                <div class="first_label">
+                    <label for="">Contact No : </label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Phone Number" name="" id="scontact" onkeypress="return contactData(event);">
+                </div>
+                <div class="error contactErr">* Required *</div>                                
+            </li>
+            <li>
+                <div class="first_label">
+                    <label for="">Address : </label>
+                </div>
+                <div>
+                    <textarea placeholder="Your Full Address" id="saddress" cols="45" rows="6"></textarea>
+                </div>
+                <div class="error addErr">* Required *</div>                              
+            </li>
+            <li>
+                <input class="btn" name="btn"  type="button" value="Add Details" id="" onclick="createTable();">
+                <!-- <input type="reset" name="reset_btn" id="reset_btn" value="Reset"
+                onclick="resetBoxes();"> -->
+            </li>
+        </ul>
+    </main>
+    <br>   
+    <section class="section_container">  
+        <h3>Details Form</h3>  
+            <table>
+                 <thead>
+                    <tr>
+                    <th class="table_header">S. No</th>
+                    <th class="table_header">Name</th>
+                    <th class="table_header">Age</th>
+                    <th class="table_header">Gender</th>
+                    <th class="table_header">Country</th>
+                    <th class="table_header">Contact</th>
+                    <th class="table_header">Address</th>
+                    <th class="table_header">Operations</th>
+                    </tr>
+                 </thead>
+                 <tbody id="tablebody">
+                     <tr>
+                         <td class="delete_btn" onclick=" return fun();"></td>
+                     </tr>
+                 </tbody>
+            </table>
+    </section>
+    <script src="detailsForm.js"></script>
+</body>
+</html>

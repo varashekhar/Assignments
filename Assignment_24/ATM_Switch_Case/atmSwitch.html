@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM switch case</title>
+</head>
+
+<body>
+    <h1>ATM switch case </h1>
+    <script>
+        // A simple programm to perform 6 step of an ATM machine
+
+        var banks = prompt("Select your Bank \n 1. SBI \n 2. Punjab Bank \n 3. Axis Bank \n 4. HDFC Bank \n 5. ICICI Bank \n 6. Bank of Baroda");
+
+
+        var userSelection = prompt("Select any option to progress \n 1. Withdraw \n 2. Deposit \n 3. Balance Enquiry \n 4. mini statement \n 5. Pin Generating \n 6. Transfer");
+
+        var savingAccount = 1000000;
+
+
+        switch (userSelection) {
+
+
+            case `1`:
+                var pin = prompt("Enter your 4 digits pin")
+                var withdraw = prompt("Enter the Amount ");
+
+                console.log("Please collect your cash ₹" + withdraw);
+
+                break;
+
+            case `2`:
+                var deposit = prompt("enter the amount");
+                var accountNumber = prompt("Enter the Account Number");
+
+                console.log(`You have successfully deposited ₹${deposit} to Account Number ${accountNumber}`);
+
+                break;
+
+            case `3`:
+
+                var phonNo = prompt("Enter your phone number");
+                var balanceEnquiry = prompt("Enter your account Number");
+
+                console.log("Your Balance is INR ₹" + savingAccount);
+                break;
+
+            case `4`:
+                var miniStatement = prompt("Enter your Account Number");
+                console.log("withdraw 20000 on 5/1/2022");
+                console.log("withdraw 30000 on 22/8/2021");
+                console.log("transfer 25000 on 14/5/2021");
+                console.log("withdraw 40000 on 25/3/2021");
+                console.log("deposite 10000 on 6/3/2021");
+                console.log("withdraw 10000 on 21/2/2021");
+                console.log("transfer 10000 on 15/2/2021");
+                console.log("withdraw 10000 on 11/2/2021");
+                console.log("deposite 10000 on 2/2/2021");
+
+                break;
+
+            case `5`:
+                var pinGenerate = prompt("Enter your Phone No.");
+                var otp = prompt("Enter the OTP sent to your phone No.");
+                var newPin = prompt("Enter your new pin")
+
+                console.log("Your pin has been changed successfully");
+                break;
+
+
+            case `6`:
+
+                var accountNumber = prompt("Enter the Account Number");
+                var phonNo = prompt("Enter your phone number");
+                var otp = prompt("Enter the OTP sent to your phone No.");
+                var transfer = prompt("Enter the amount to be transfered")
+                console.log("you have successfully transfered INR ₹" + transfer);
+
+                break;
+
+            default:
+                console.log("Wrong Selection");
+        }
+    </script>
+</body>
+
+</html>
